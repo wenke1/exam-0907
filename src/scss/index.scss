@@ -1,0 +1,60 @@
+@import "./libs/common.scss";
+@import "./libs/minxin.scss";
+.wrapper {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+}
+
+header {
+    width: 100%;
+    height: pxTorem(44px);
+    padding: pxTorem(10px);
+    @include box_flex;
+    @include align;
+    background: #f2f2f2;
+    span {
+        i.icon {
+            font-size: pxTorem(18px);
+        }
+    }
+    form {
+        height: 100%;
+        @include flex;
+        margin: 0 pxTorem(10px);
+        background: #fff;
+        @include box_flex;
+        @include align;
+        i.icon {
+            font-size: pxTorem(16px);
+            padding: pxTorem(5px);
+        }
+        input {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+section {
+    @include flex;
+    overflow: hidden;
+}
+
+.wrap {
+    width: 100%;
+    nav {
+        width: 200%;
+        padding: pxTorem(10px);
+        flex-wrap: nowrap;
+        @include align;
+        background: #f2f2f2;
+        span {
+            padding: 0 paTorem(30px);
+            &.active {
+                color: #f50;
+            }
+        }
+    }
+}
